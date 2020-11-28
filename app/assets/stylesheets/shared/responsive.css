@@ -1,0 +1,19 @@
+@media (max-width: 1000px) {
+  .container {
+    justify-content: space-between;
+  }
+  
+  .nav-right {
+    display: none;
+  }
+
+  .sp-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 670px) {
+  .input-box {
+    display: none;
+  }
+}
