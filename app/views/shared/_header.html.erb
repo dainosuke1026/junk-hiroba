@@ -14,18 +14,30 @@
     </div>
 
     <div class="nav-right">
-      <ul class="nav-list">
-        <li class="nav-item"><%= link_to "記事フィード", "#", class: "article-btn" %></li>
-        <li class="nav-item"><%= link_to "質問フィード", "#", class: "question-btn" %></li>
-        <li class="nav-item"><%= link_to 'マイページ', "#", class: "user-nickname" %></li>
-        <li class="nav-item"><%= link_to 'ログアウト', "#", method: :delete, class: "logout" %></li>
-        <li class="nav-item"><%= link_to 'ログイン', "#", class: "login" %></li>
-        <li class="nav-item"><%= link_to '新規登録', "#", class: "sign-up" %></li>
+      <ul class="nav-list-wide">
+        <li><%= link_to "記事フィード", "#", class: "nav-item" %></li>
+        <li><%= link_to "質問フィード", "#", class: "nav-item" %></li>
+        <li><%= link_to 'マイページ', "#", class: "nav-item" %></li>
+        <li><%= link_to 'ログアウト', "#", method: :delete, class: "nav-item" %></li>
+        <li><%= link_to 'ログイン', "#", class: "nav-item" %></li>
+        <li><%= link_to '新規登録', "#", class: "nav-item" %></li>
+      </ul>
+      <ul class="nav-list-narrow">
+        <li><%= link_to "記事", "#", class: "nav-item" %></li>
+        <li><%= link_to "質問", "#", class: "nav-item" %></li>
       </ul>
     </div>
 
     <div class="sp-menu">
       <span class="material-icons" id="open">menu</span>
+      <ul>
+        <li><%= link_to "記事フィード", "#", class: "pulldown-menu" %></li>
+        <li><%= link_to "質問フィード", "#", class: "pulldown-menu" %></li>
+        <li><%= link_to 'マイページ', "#", class: "pulldown-menu" %></li>
+        <li><%= link_to 'ログアウト', "#", method: :delete, class: "pulldown-menu" %></li>
+        <li><%= link_to 'ログイン', "#", class: "pulldown-menu" %></li>
+        <li><%= link_to '新規登録', "#", class: "pulldown-menu" %></li>
+      </ul>
     </div>
   </div>
 </header>

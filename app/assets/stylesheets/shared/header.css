@@ -3,7 +3,7 @@
 }
 
 header {
-  background-color: gray;
+  background-color: #eee;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -30,60 +30,31 @@ header {
   align-items: center;
 }
 
-.nav-list {
+.nav-list-wide {
   display: flex;
   align-items: center;
 }
 
+.nav-list-narrow {
+  display: none;
+}
+
 .nav-item {
-  margin: 0 20px;
+  margin: 0 30px;
   font-size: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: black;
 }
 
 .nav-item:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 }
 
 .title-logo {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 28px;
-  white-space: nowrap;
-}
-
-.article-btn {
-  text-decoration: none;
-  color: white;
-  white-space: nowrap;
-}
-
-.question-btn {
-  text-decoration: none;
-  color: white;
-  white-space: nowrap;
-}
-
-.user-nickname {
-  text-decoration: none;
-  color: white;
-  white-space: nowrap;
-}
-
-.logout {
-  text-decoration: none;
-  color: white;
-  white-space: nowrap;
-}
-
-.login {
-  text-decoration: none;
-  color: white;
-  white-space: nowrap;
-}
-
-.sign-up {
-  text-decoration: none;
-  color: white;
   white-space: nowrap;
 }
 
@@ -109,11 +80,4 @@ header {
 
 .sp-menu {
   display: none;
-}
-
-.sp-menu #open {
-  line-height: 65px;
-  font-size: 50px;
-  padding-right: 20px;
-  cursor: pointer;
 }
