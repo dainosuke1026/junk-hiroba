@@ -7,9 +7,6 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
-}
-
-.container {
   height: 65px;
   width: 100vw; 
   display: flex;
