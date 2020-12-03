@@ -8,12 +8,14 @@
     </div>
 
     <div class="sign-menu">
-      <div class="sign-sns">
-        <div>
-          SNS認証サインイン
+      <div class="sign-up-in">
+        <div class="sign-sns">
+          <%= link_to "Twitterアカウントで登録", "#", class:"btn twitter"%>
+          <%= link_to "Facebookアカウントで登録", "#", class:"btn facebook"%>
+          <%= link_to "Googleアカウントで登録", "#", class: "btn google"%>
         </div>
         <div>
-          <p>アカウントを持っている場合は<%= render "devise/shared/links" %>から。</p>
+          <span>アカウントを持っている場合は<%= render "devise/shared/links" %>から。</span>
         </div>
       </div>
       <div class="sign-up-in">
@@ -44,10 +46,12 @@
           </div>
 
           <div class="field">
-            <%= f.submit "新規登録", class:"action-btn" %>
+            <%= f.submit "新規登録", class:"btn action-btn" %>
           </div>
         <% end %>
       </div>
     </div>
   </div>
 </div>
+
+<%= render "shared/footer" %>

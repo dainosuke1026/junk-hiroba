@@ -7,21 +7,27 @@
 .sign-menu {
   display: flex;
   justify-content: center;
-}
-
-.sign-sns {
-  padding: 0 30px;
-  flex-direction: column;
+  margin-left: 80px;
 }
 
 .sign-up-in {
   padding: 0 30px;
+  width: 45%;
+  display: flex;
   flex-direction: column;
-  width: 30%;
+  justify-content: space-around;
+}
+
+.sign-sns {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 80%;
 }
 
 .field {
   margin-bottom: 15px;
+  width: 80%;
 }
 
 .input-default {
@@ -36,14 +42,47 @@
   resize: none;
 }
 
-.action-btn {
+.btn {
   width: 100%;
   color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.twitter {
+  background-color: #55acee;
+  border-color: #2795e9;
+}
+
+.twitter:hover {
+  background-color: #2795e9;
+}
+
+.facebook {
+  background-color: #3b5998;
+  border-color: #484877;
+}
+
+.facebook:hover {
+  background-color: #484877;
+}
+
+.google {
+  background-color: #c6594b;
+  border-color: #a94335;
+}
+
+.google:hover {
+  background-color: #a94335;
+}
+
+.action-btn {
   background-color: orange;
   border-color: darkorange;
-  border-radius: 3px;
-  padding: 10px;
-  cursor: pointer;
 }
 
 .action-btn:hover {

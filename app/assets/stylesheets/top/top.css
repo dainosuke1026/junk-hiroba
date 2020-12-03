@@ -24,6 +24,10 @@ h3 {
   padding-bottom: 20px;
 }
 
+span > br {
+  display: none;
+}
+
 .new-arrival-list {
   background-color: #eee;
   width: 500px;
