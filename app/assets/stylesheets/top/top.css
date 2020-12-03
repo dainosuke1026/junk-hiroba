@@ -16,6 +16,10 @@
   justify-content: space-evenly;
 }
 
+.arrival-title {
+  padding-bottom: 20px;
+}
+
 .new-arrival-list {
   background-color: #eee;
   width: 500px;

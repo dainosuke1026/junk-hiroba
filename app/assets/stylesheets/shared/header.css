@@ -55,6 +55,10 @@ header {
   white-space: nowrap;
 }
 
+.title :before {
+  content: "◎";
+}
+
 .search-form {
   display: flex;
 }
