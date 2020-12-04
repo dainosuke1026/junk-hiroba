@@ -3,15 +3,20 @@
 }
 
 header {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.header-content {
   background-color: #fff;
   border-bottom: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  height: 65px;
+  width: 100vw;
   position: fixed;
   top: 0;
   z-index: 10;
-  height: 65px;
-  width: 100vw; 
-  display: flex;
-  justify-content: space-around;
 }
 
 .search {
@@ -31,10 +36,6 @@ header {
 .nav-list-wide {
   display: flex;
   align-items: center;
-}
-
-.nav-list-narrow {
-  display: none;
 }
 
 .nav-item {
@@ -81,5 +82,13 @@ header {
 }
 
 .sp-menu {
+  display: none;
+}
+
+.pulldown-content {
+  display: flex-end;
+  margin-top: 65px;
+  position: fixed;
+  right: 0;
   display: none;
 }

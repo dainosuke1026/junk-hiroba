@@ -1,37 +1,38 @@
 <header>
-  <div class="nav-left">
-    <div class="title">
-      <%= link_to "ジャンク広場", root_path, class: "title-logo" %>
+  <div class="header-content">
+    <div class="nav-left">
+      <div class="title">
+        <%= link_to "ジャンク広場", root_path, class: "title-logo" %>
+      </div>
+      <div class="search">
+        <form class="search-form" action="#">
+        <input class='input-box' placeholder='キーワードから探す'>
+        <button class="search-button">
+          <%= image_tag "search.png", class:"search-icon" %>
+        </button>
+      </div>
     </div>
-    <div class="search">
-      <form class="search-form" action="#">
-      <input class='input-box' placeholder='キーワードから探す'>
-      <button class="search-button">
-        <%= image_tag "search.png", class:"search-icon" %>
-      </button>
+
+    <div class="nav-right">
+      <ul class="nav-list-wide">
+        <li><%= link_to "記事投稿", posts_path, class: "nav-item" %></li>
+        <li><%= link_to "質問投稿", "#", class: "nav-item" %></li>
+        <li><%= link_to 'マイページ', "#", class: "nav-item" %></li>
+        <li><%= link_to 'ログアウト', "#", method: :delete, class: "nav-item" %></li>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "nav-item" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "nav-item" %></li>
+      </ul>
+    </div>
+
+    <div class="sp-menu">
+      <span class="material-icons" id="open">menu</span>
     </div>
   </div>
 
-  <div class="nav-right">
-    <ul class="nav-list-wide">
-      <li><%= link_to "記事フィード", posts_path, class: "nav-item" %></li>
-      <li><%= link_to "質問フィード", "#", class: "nav-item" %></li>
-      <li><%= link_to 'マイページ', "#", class: "nav-item" %></li>
-      <li><%= link_to 'ログアウト', "#", method: :delete, class: "nav-item" %></li>
-      <li><%= link_to 'ログイン', new_user_session_path, class: "nav-item" %></li>
-      <li><%= link_to '新規登録', new_user_registration_path, class: "nav-item" %></li>
-    </ul>
-    <ul class="nav-list-narrow">
-      <li><%= link_to "記事", "#", class: "nav-item" %></li>
-      <li><%= link_to "質問", "#", class: "nav-item" %></li>
-    </ul>
-  </div>
-
-  <div class="sp-menu">
-    <span class="material-icons" id="open">menu</span>
+  <div class="pulldown-content">
     <ul>
-      <li><%= link_to "記事フィード", posts_path, class: "pulldown-menu" %></li>
-      <li><%= link_to "質問フィード", "#", class: "pulldown-menu" %></li>
+      <li><%= link_to "記事投稿", posts_path, class: "pulldown-menu" %></li>
+      <li><%= link_to "質問投稿", "#", class: "pulldown-menu" %></li>
       <li><%= link_to 'マイページ', "#", class: "pulldown-menu" %></li>
       <li><%= link_to 'ログアウト', "#", method: :delete, class: "pulldown-menu" %></li>
       <li><%= link_to 'ログイン', "#", class: "pulldown-menu" %></li>
