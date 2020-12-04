@@ -1,0 +1,53 @@
+<div class="main">
+  <div class="container">
+    <div class="header_2">
+      <div class="title">
+        <%= link_to "ジャンク広場", root_path, class: "title-logo" %>
+      </div>
+      <h2>ログイン</h2>
+    </div>
+
+    <div class="sign-menu">
+      <div class="sign-up-in">
+        <div class="sign-sns">
+          <%= link_to "Twitterアカウントでログイン", "#", class:"btn twitter"%>
+          <%= link_to "Facebookアカウントでログイン", "#", class:"btn facebook"%>
+          <%= link_to "Googleアカウントでログイン", "#", class: "btn google"%>
+        </div>
+        <div>
+          <span>アカウントを持っていない場合は<%= render "devise/shared/links" %>から。</span>
+        </div>
+      </div>
+      <div class="sign-up-in">
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="field">
+            <%= f.label "メールアドレス" %><br />
+            <%= f.email_field :email, class:"input-default", autofocus: true %>
+          </div>
+
+          <div class="field">
+            <%= f.label "パスワード" %><br />
+            <%= f.password_field :password, class:"input-default" %>
+          </div>
+
+          <% if devise_mapping.rememberable? %>
+            <div class="field">
+              <%= f.check_box :remember_me %>
+              <%= f.label "ログイン状態を保存する" %>
+            </div>
+          <% end %>
+
+          <div class="field">
+            <%= link_to "パスワードを忘れた場合", new_password_path(resource_name) %>
+          </div>
+
+          <div class="field">
+            <%= f.submit "ログイン", class:"btn action-btn" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/footer" %>
