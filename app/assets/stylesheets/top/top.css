@@ -9,7 +9,7 @@
   margin: 100px auto;
 }
 
-.new-arrival {
+.home-content {
   height: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -19,16 +19,16 @@ h2 {
   font-size: 20px;
 }
 
-h3 {
+.link {
   font-size: 20px;
-  padding-bottom: 20px;
+  text-decoration: none;
 }
 
 span > br {
   display: none;
 }
 
-.new-arrival-list {
+.article-area {
   background-color: #eee;
   width: 500px;
   padding: 30px;

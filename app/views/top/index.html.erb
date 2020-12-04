@@ -2,10 +2,12 @@
 
 <div class="main">
   <div class="container">
-    <div class="new-arrival">
-      <div class="new-arrival-list">
-        <h3>・記事新着</h3>
-        <ul class="article-list">
+    <div class="home-content">
+      <div class="article-area">
+        <div>
+          <%= link_to "・記事一覧", posts_path, class: "link" %>
+        </div>
+        <ul class="new-list">
           <li>新着記事1</li>
           <li>新着記事2</li>
           <li>新着記事3</li>
@@ -13,9 +15,12 @@
           <li>新着記事5</li>
         </ul>
       </div>
-      <div class="new-arrival-list">
-        <h3>・質問新着</h3>
-        <ul class="question-list">
+
+      <div class="article-area">
+        <div>
+          <%= link_to "・質問一覧", "#", class: "link" %>
+        </div>
+        <ul class="new-list">
           <li>新着質問1</li>
           <li>新着質問2</li>
           <li>新着質問3</li>
