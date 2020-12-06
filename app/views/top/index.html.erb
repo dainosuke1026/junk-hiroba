@@ -2,31 +2,33 @@
 
 <div class="main">
   <div class="container">
-    <div class="home-content">
-      <div class="article-area">
-        <div>
-          <%= link_to "・記事一覧", posts_path, class: "link" %>
+    <div class="article-section">
+      <div class="article-box">
+        <div class="box-title">
+          <%= link_to "記事一覧", "#", class: "tab-name" %>
         </div>
-        <ul class="new-list">
-          <li>新着記事1</li>
-          <li>新着記事2</li>
-          <li>新着記事3</li>
-          <li>新着記事4</li>
-          <li>新着記事5</li>
-        </ul>
+        <div class="article-content">
+          <ul class="list-items">
+            <%# <% @posts.each do |post| %>
+              <%= render partial: "posts/post" %>
+              <%# <%= render partial: "posts/post", locals: { post: post } %>
+            <%# <% end %>
+          </ul>
+        </div>
       </div>
-
-      <div class="article-area">
-        <div>
-          <%= link_to "・質問一覧", "#", class: "link" %>
+      <div class="article-box">
+        <div class="box-title">
+          <%= link_to "質問一覧", "#", class: "tab-name" %>
         </div>
-        <ul class="new-list">
-          <li>新着質問1</li>
-          <li>新着質問2</li>
-          <li>新着質問3</li>
-          <li>新着質問4</li>
-          <li>新着質問5</li>
-        </ul>
+        <div class="article-content">
+          <ul class="list-items">
+            <li>新着質問1</li>
+            <li>新着質問2</li>
+            <li>新着質問3</li>
+            <li>新着質問4</li>
+            <li>新着質問5</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

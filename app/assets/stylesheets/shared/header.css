@@ -56,7 +56,7 @@ header {
   white-space: nowrap;
 }
 
-.title :before {
+.header-title :before {
   content: "◎";
 }
 
@@ -86,7 +86,5 @@ header {
 
 .pulldown-content {
   margin-top: 65px;
-  position: fixed;
-  right: 0;
   display: none;
 }

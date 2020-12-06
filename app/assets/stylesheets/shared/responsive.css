@@ -33,6 +33,9 @@
 
   .pulldown-content {
     display: block;
+    position: fixed;
+    z-index: 9;
+    right: 0;
   }
   
   .pulldown-menu {
