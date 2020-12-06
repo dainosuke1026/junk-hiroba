@@ -1,3 +1,16 @@
+html {
+  background-color: #eee;
+}
+
+.btn {
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
 .main {
   width: 100vw;
 }
@@ -12,7 +25,7 @@
   height: 100%;
   display: flex;
   justify-content: space-evenly;
-  background-color: #eee;
+  overflow: scroll;
 }
 
 .article-box {
@@ -31,6 +44,7 @@
   font-size: 20px;
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 .article-content {
@@ -68,6 +82,7 @@
 
 h2 {
   font-size: 20px;
+  font-weight: bold;
 }
 
 span > br {
