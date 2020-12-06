@@ -1,7 +1,7 @@
 <header>
   <div class="header-content">
     <div class="nav-left">
-      <div class="title">
+      <div class="header-title">
         <%= link_to "ジャンク広場", root_path, class: "title-logo" %>
       </div>
       <div class="search">
@@ -15,7 +15,7 @@
 
     <div class="nav-right">
       <ul class="nav-list-wide">
-        <li><%= link_to "記事投稿", posts_path, class: "nav-item" %></li>
+        <li><%= link_to "記事投稿", "#", class: "nav-item" %></li>
         <li><%= link_to "質問投稿", "#", class: "nav-item" %></li>
         <li><%= link_to 'マイページ', "#", class: "nav-item" %></li>
         <li><%= link_to 'ログアウト', "#", method: :delete, class: "nav-item" %></li>
@@ -31,7 +31,7 @@
 
   <div class="pulldown-content">
     <ul>
-      <li><%= link_to "記事投稿", posts_path, class: "pulldown-menu" %></li>
+      <li><%= link_to "記事投稿", "#", class: "pulldown-menu" %></li>
       <li><%= link_to "質問投稿", "#", class: "pulldown-menu" %></li>
       <li><%= link_to 'マイページ', "#", class: "pulldown-menu" %></li>
       <li><%= link_to 'ログアウト', "#", method: :delete, class: "pulldown-menu" %></li>

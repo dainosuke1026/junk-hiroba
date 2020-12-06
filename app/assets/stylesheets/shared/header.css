@@ -4,7 +4,6 @@
 
 header {
   display: flex;
-  /* flex-direction: column; */
 }
 
 .header-content {
@@ -57,7 +56,7 @@ header {
   white-space: nowrap;
 }
 
-.title :before {
+.header-title :before {
   content: "◎";
 }
 
@@ -86,9 +85,6 @@ header {
 }
 
 .pulldown-content {
-  display: flex-end;
   margin-top: 65px;
-  position: fixed;
-  right: 0;
   display: none;
 }
