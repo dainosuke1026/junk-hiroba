@@ -2,14 +2,10 @@
 
 <div class="main">
   <div class="container">
-    <div class="form">
-      <div class="form-title">
-        <h2>記事投稿</h2>
-      </div>
-
+    <div class="new-chat">
       <div class="form-input">
         <%# <%= form_with model: post, local: true do |f| %>
-        <input class="post-title" placeholder="記事タイトル (必須 40文字まで)">
+        <input class="post-title" placeholder="チャットタイトル(必須 40文字まで)">
           <%# <%= f.text_area :title, class:"posts-title", id:"post-title", placeholder:"記事タイトル (必須 40文字まで)", maxlength:"40" %>
         <div class="form-option">
           <input class="post-tag" placeholder="タグをスペース区切りで3つまで入力">
