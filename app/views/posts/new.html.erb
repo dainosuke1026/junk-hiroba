@@ -2,28 +2,35 @@
 
 <div class="main">
   <div class="container">
-    <div class="new-chat">
-      <div class="form-input">
-        <%# <%= form_with model: post, local: true do |f| %>
-        <input class="post-title" placeholder="チャットタイトル(必須 40文字まで)">
-          <%# <%= f.text_area :title, class:"posts-title", id:"post-title", placeholder:"記事タイトル (必須 40文字まで)", maxlength:"40" %>
-        <div class="form-option">
-          <input class="post-tag" placeholder="タグをスペース区切りで3つまで入力">
-            <%# <%= f.text_area :post_tags, class:"post-tag", id:"post_tags", placeholder:"タグをスペース区切りで3つまで入力" %>
-          <label class="btn form-image">
-            <span class="image-file">画像</span>
-            <input type="file" class="hidden">
-          </label>
-        </div>
-        <textarea class="post-text", placeholder="テキスト入力と画像を添付 (テキスト入力必須)" rows="20" cols="100"></textarea>
-          <%# <%= f.text_area :title, class:"posts-text", id:"post-text", placeholder:"テキスト入力と画像を添付" %>
+    <div class="post-section">
+      <div class="title">
+        チャット新規作成
       </div>
 
-      <div class="form-submit">
-        <input class="btn post-btn" type="submit" value="記事を投稿する">
-          <%# <%= f.submit "記事を投稿する" class:"btn post-btn" %>
-        <%# <% end %>
+      <%# <%= form_with model: @post, local: true do |f| %>
+      <div class="inner">
+        <div class="post-input">
+          <h2>
+            ・チャットタイトル
+            <span>(40文字まで)</span>
+          </h2>
+          <input class="post-title" placeholder="チャットタイトル(40文字まで)">
+          <%# <%= f.text_field :title, class:"posts-title", id:"post-title", placeholder:"チャットタイトル (必須 40文字まで)", maxlength:"40" %>
+          <h2>
+            ・タグ
+            <span>(スペース区切りで3つまで入力)</span>
+          </h2>
+          <input class="post-tag" placeholder="タグをスペース区切りで3つまで入力">
+            <%# <%= f.text_area :post_tags, class:"post-tag", id:"post_tags", placeholder:"タグをスペース区切りで3つまで入力" %>
+        </div>
       </div>
+
+        <div class="form-submit">
+          <input class="btn form-btn" type="submit" value="チャットを作成する">
+            <%# <%= f.submit "チャットを作成する" class:"btn post-btn" %>
+        </div>
+      <%# <% end %>
+
     </div>
   </div>
 </div>

@@ -5,7 +5,7 @@
     <div class="article-section">
       <div class="article-box">
         <div class="box-title">
-          <%= link_to "チャット一覧", "#", class: "tab-name" %>
+          <%= link_to "新規チャット一覧", "#", class: "tab-name" %>
         </div>
         <div class="article-content">
           <ul class="list-items">
@@ -18,15 +18,14 @@
       </div>
       <div class="article-box">
         <div class="box-title">
-          <%= link_to "質問一覧", "#", class: "tab-name" %>
+          <%= link_to "ランキング", "#", class: "tab-name" %>
         </div>
         <div class="article-content">
           <ul class="list-items">
-            <li>新着質問1</li>
-            <li>新着質問2</li>
-            <li>新着質問3</li>
-            <li>新着質問4</li>
-            <li>新着質問5</li>
+            <%# <% @posts.each do |post| %>
+              <%= render partial: "posts/post" %>
+              <%# <%= render partial: "posts/post", locals: { post: post } %>
+            <%# <% end %>
           </ul>
         </div>
       </div>

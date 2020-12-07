@@ -8,7 +8,7 @@ header {
 
 .header-content {
   background-color: #fff;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #3ccace;
   display: flex;
   justify-content: space-around;
   height: 65px;

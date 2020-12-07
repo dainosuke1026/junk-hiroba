@@ -2,7 +2,7 @@ footer {
   background-color: #fff;
   height: 200px;
   width: 100vw;
-  margin-top: 35px;
+  border-top: 1px solid #3ccace;
 }
 
 .bottom {
