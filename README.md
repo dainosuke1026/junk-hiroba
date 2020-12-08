@@ -36,81 +36,61 @@ Things you may want to cover:
 
 ### Association
 
-- has_many :posts
-- has_many :comments
-- has_many :questions
-- has_many :answers
+- has_many :post_users
+- has_many :posts, through: post_users
+- has_many :messages
 - has_many :favorites
 
 ## posts テーブル
 
-| Column          | Type       | Options                        |
-| --------------- | ---------- | ------------------------------ |
-| user            | references | null: false, foreign_key: true |
-| title           | string     | null: false                    |
-| text            | text       | null: false                    |
+| Column          | Type   | Options     |
+| --------------- | ------ | ----------- |
+| name            | string | null: false |
 
 ### Association
 
-- belongs_to :user
-- has_many :commnets
+- has_many :post_users
+- has_many :users, through: post_users
+- has_many :messages
 - has_many :favorites
 - has_many :post_tags
 - has_many :tags, throuth: post_tags
 
-## comments テーブル
+## post_users テーブル
 
 | Column          | Type       | Options                        |
 | --------------- | ---------- | ------------------------------ |
 | user            | references | null: false, foreign_key: true |
 | post            | references | null: false, foreign_key: true |
-| text            | text       | null: false                    |
 
 ### Association
 
 - belongs_to :post
-
-## questions テーブル
-
-| Column          | Type       | Options                        |
-| --------------- | ---------- | ------------------------------ |
-| user            | references | null: false, foreign_key: true |
-| title           | string     | null: false                    |
-| text            | text       | null: false                    |
-
-### Association
-
 - belongs_to :user
-- has_many :answers
-- has_many :favorites
-- has_many :question_tags
-- has_many :tags, throuth: question_tags
 
-## answers テーブル
-
-| Column          | Type       | Options                        |
-| --------------- | ---------- | ------------------------------ |
-| user            | references | null: false, foreign_key: true |
-| question        | references | null: false, foreign_key: true |
-| text            | text       | null: false                    |
-
-### Association
-
-- belongs_to :question
-
-## favorites テーブル
+## messages テーブル
 
 | Column          | Type       | Options                        |
 | --------------- | ---------- | ------------------------------ |
 | user            | references | null: false, foreign_key: true |
 | post            | references | null: false, foreign_key: true |
-| question        | references | null: false, foreign_key: true |
+| content         | text       | null: false                    |
 
 ### Association
 
-- belongs_to :user
 - belongs_to :post
-- belongs_to :question
+- belongs_to :user
+
+## tags テーブル
+
+| Column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| tag_name | string |             |
+
+### Association
+
+- has_many :post_tags
+- has_many :posts, throuth: post_tags
 
 ## post_tags テーブル
 
@@ -124,27 +104,14 @@ Things you may want to cover:
 - belongs_to :post
 - belongs_to :tag
 
-## question_tags テーブル
+## favorites テーブル
 
 | Column          | Type       | Options                        |
 | --------------- | ---------- | ------------------------------ |
-| tag             | references | null: false, foreign_key: true |
-| question        | references | null: false, foreign_key: true |
+| user            | references | null: false, foreign_key: true |
+| post            | references | null: false, foreign_key: true |
 
 ### Association
 
-- belongs_to :question
-- belongs_to :tag
-
-## tags テーブル
-
-| Column   | Type   | Options     |
-| -------- | ------ | ----------- |
-| tag_name | string |             |
-
-### Association
-
-- has_many :post_tags
-- has_many :posts, throuth: post_tags
-- has_many :question_tags
-- has_many :questions, throuth: question_tags
+- belongs_to :user
+- belongs_to :post
