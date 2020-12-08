@@ -23,7 +23,7 @@
 
   .pulldown-content ul {
     display: none;
-    background-color: #eee;
+    background-color: #3ccace;
     text-align: center;
   }
 
@@ -36,6 +36,7 @@
     position: fixed;
     z-index: 9;
     right: 0;
+    opacity: 0.9;
   }
   
   .pulldown-menu {
@@ -43,11 +44,12 @@
     text-decoration: none;
     white-space: nowrap;
     color: black;
-    padding: 10px 25px;
+    padding: 18px 25px;
   }
   
   .pulldown-menu:hover {
-    background-color: rgb(225, 221, 221);
+    background-color: #2ea8ac;
+    color: #eee;
   }
 }
 
