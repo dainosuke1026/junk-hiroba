@@ -6,12 +6,12 @@
     <div class="my-menu">
       <div class="tab-section">
         <ul class="tab-menu">
-          <li><a href="#" class="active">マイチャット</a></li>
-          <li><a href="#">お気に入り</a></li>
-          <li><a href="#">コメント履歴</a></li>
+          <li><a href="#" class="active" data-id="my-chat">マイチャット</a></li>
+          <li><a href="#" data-id="favorite">お気に入り</a></li>
+          <li><a href="#" data-id="comment-history">コメント履歴</a></li>
         </ul>
 
-        <div class="tab-box active">
+        <div class="tab-content active" id="my-chat">
           <div class="box-content">
             <ul class="list-items">
               <%# <% @posts.each do |post| %>
@@ -22,9 +22,22 @@
           </div>
         </div>
 
-        <div class="tab-box">
+        <div class="tab-content" id="favorite">
           <div class="box-content">
             <ul class="list-items">
+              お気に入り
+              <%# <% @posts.each do |post| %>
+                <%= render partial: "posts/post" %>
+                <%# <%= render partial: "posts/post", locals: { post: post } %>
+              <%# <% end %>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-content" id="comment-history">
+          <div class="box-content">
+            <ul class="list-items">
+              コメント履歴
               <%# <% @posts.each do |post| %>
                 <%= render partial: "posts/post" %>
                 <%# <%= render partial: "posts/post", locals: { post: post } %>

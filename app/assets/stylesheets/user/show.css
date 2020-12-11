@@ -33,14 +33,14 @@
   transition: opacity 0.4s;
 }
 
-.tab-box.active {
+.tab-content.active {
   background-color: #fff;
   display: block;
   min-height: 150px;
   padding: 10px;
 }
 
-.tab-box {
+.tab-content {
   display: none;
 }
 
