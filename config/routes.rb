@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root 'top#index'
   resources :posts
   resources :messages
+  resources :users, only: [:show]
 end

@@ -2,12 +2,13 @@
 
 <div class="main">
   <div class="container">
-    <div class="article-section">
-      <div class="article-box">
+    <div class="inner">
+    
+      <div class="inner-box">
         <div class="box-title">
-          <%= link_to "新着一覧", "#", class: "tab-name" %>
+          新着一覧
         </div>
-        <div class="article-content">
+        <div class="box-content">
           <ul class="list-items">
             <%# <% @posts.each do |post| %>
               <%= render partial: "posts/post" %>
@@ -16,11 +17,12 @@
           </ul>
         </div>
       </div>
-      <div class="article-box">
+
+      <div class="inner-box">
         <div class="box-title">
-          <%= link_to "ランキング", "#", class: "tab-name" %>
+          ランキング
         </div>
-        <div class="article-content">
+        <div class="box-content">
           <ul class="list-items">
             <%# <% @posts.each do |post| %>
               <%= render partial: "posts/post" %>
@@ -29,6 +31,7 @@
           </ul>
         </div>
       </div>
+
     </div>
   </div>
 </div>

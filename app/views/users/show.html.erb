@@ -1,0 +1,57 @@
+<%= render "shared/header" %>
+
+<div class="main">
+  <div class="container">
+
+    <div class="my-menu">
+      <div class="tab-section">
+        <ul class="tab-menu">
+          <li><a href="#" class="active">マイチャット</a></li>
+          <li><a href="#">お気に入り</a></li>
+          <li><a href="#">コメント履歴</a></li>
+        </ul>
+
+        <div class="tab-box active">
+          <div class="box-content">
+            <ul class="list-items">
+              <%# <% @posts.each do |post| %>
+                <%= render partial: "posts/post" %>
+                <%# <%= render partial: "posts/post", locals: { post: post } %>
+              <%# <% end %>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-box">
+          <div class="box-content">
+            <ul class="list-items">
+              <%# <% @posts.each do |post| %>
+                <%= render partial: "posts/post" %>
+                <%# <%= render partial: "posts/post", locals: { post: post } %>
+              <%# <% end %>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+        
+      <div class="profile-box">
+        <div class="box-title">
+          プロフィール
+        </div>
+        <div class="profile">
+          <div class="user-name">
+            名前: <%= @user.nickname %>
+          </div>
+          <div class="user-email">
+            メールアドレス: <%= @user.email %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<%= render "shared/footer" %>

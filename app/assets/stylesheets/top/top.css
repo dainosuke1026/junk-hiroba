@@ -20,36 +20,33 @@ html {
   margin: 100px auto;
 }
 
-.article-section {
+.inner {
   display: flex;
   justify-content: space-evenly;
-  overflow: scroll;
+  align-items: baseline;
 }
 
-.article-box {
+.inner-box {
+  background-color: #fff; 
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin: 10px;
+  width: 100%;
+  min-height: 150px
 }
 
 .box-title {
-  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-decoration: none;
   margin-bottom: 20px;
   border-bottom: 1px solid red;
-  text-align: center;
 }
 
-.tab-name {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.article-content {
-  background-color: #fff;
-  width: 500px;
+.box-content {
   padding: 10px;
 }
 
@@ -60,6 +57,10 @@ html {
 
 .list-header {
   margin-bottom: 10px;
+}
+
+.create-date {
+  color: #555;
 }
 
 .list-main {
