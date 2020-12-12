@@ -71,14 +71,3 @@
 .google:hover {
   background-color: #a94335;
 }
-
-.action-btn {
-  width: 100%;
-  background-color: orange;
-  border-color: darkorange;
-  margin-top: 20px;
-}
-
-.action-btn:hover {
-  background-color: darkorange;
-}

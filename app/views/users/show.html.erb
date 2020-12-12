@@ -1,0 +1,73 @@
+<%= render "shared/header" %>
+
+<div class="main">
+  <div class="container">
+
+    <div class="my-menu">
+      <div class="tab-section">
+        <ul class="tab-menu">
+          <li><a href="#" class="active" data-id="my-chat">マイチャット</a></li>
+          <li><a href="#" data-id="favorite">お気に入り</a></li>
+          <li><a href="#" data-id="comment-history">コメント履歴</a></li>
+        </ul>
+
+        <div class="tab-content active" id="my-chat">
+          <div class="box-content">
+            <ul class="list-items">
+              <%# <% @posts.each do |post| %>
+                <%= render partial: "posts/post" %>
+                <%# <%= render partial: "posts/post", locals: { post: post } %>
+              <%# <% end %>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-content" id="favorite">
+          <div class="box-content">
+            <ul class="list-items">
+              お気に入り
+              <%# <% @posts.each do |post| %>
+                <%= render partial: "posts/post" %>
+                <%# <%= render partial: "posts/post", locals: { post: post } %>
+              <%# <% end %>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-content" id="comment-history">
+          <div class="box-content">
+            <ul class="list-items">
+              コメント履歴
+              <%# <% @posts.each do |post| %>
+                <%= render partial: "posts/post" %>
+                <%# <%= render partial: "posts/post", locals: { post: post } %>
+              <%# <% end %>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile-box">
+        <div class="box-title">
+          プロフィール
+        </div>
+        <div class="profile">
+          <div class="user-name">
+            <label>ニックネーム:</label>
+            <%= @user.nickname %>
+          </div>
+          <div class="user-email">
+            <label>メールアドレス:</label>
+            <%= @user.email %>
+          </div>
+        </div>
+        <%= link_to "プロフィールを編集", edit_user_registration_path, class:"btn action-btn" %>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<%= render "shared/footer" %>
