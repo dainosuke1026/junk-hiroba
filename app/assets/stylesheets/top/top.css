@@ -2,15 +2,6 @@ html {
   background-color: #eee;
 }
 
-.btn {
-  color: #fff;
-  border-radius: 3px;
-  cursor: pointer;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-}
-
 .main {
   width: 100vw;
 }
@@ -90,4 +81,25 @@ h2 {
 
 span > br {
   display: none;
+}
+
+.btn {
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.action-btn {
+  width: 100%;
+  background-color: orange;
+  border-color: darkorange;
+  margin-top: 20px;
+  height: 100%;
+}
+
+.action-btn:hover {
+  background-color: darkorange;
 }

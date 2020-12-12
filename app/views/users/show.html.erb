@@ -47,19 +47,22 @@
         </div>
 
       </div>
-        
+
       <div class="profile-box">
         <div class="box-title">
           プロフィール
         </div>
         <div class="profile">
           <div class="user-name">
-            名前: <%= @user.nickname %>
+            <label>ニックネーム:</label>
+            <%= @user.nickname %>
           </div>
           <div class="user-email">
-            メールアドレス: <%= @user.email %>
+            <label>メールアドレス:</label>
+            <%= @user.email %>
           </div>
         </div>
+        <%= link_to "プロフィールを編集", edit_user_registration_path, class:"btn action-btn" %>
       </div>
 
     </div>

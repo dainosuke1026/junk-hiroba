@@ -103,13 +103,6 @@
   display: none;
 }
 
-.form-btn {
-  background-color: #3ccace;
-  font-size: 20px;
-  border: none;
-  height: 100%;
-}
-
-.form-btn:hover {
-  background-color: #2ea8ac;
+.message-submit>.action-btn {
+  margin-top: initial;
 }
