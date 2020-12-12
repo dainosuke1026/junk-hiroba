@@ -74,7 +74,7 @@ Things you may want to cover:
 | --------------- | ---------- | ------------------------------ |
 | user            | references | null: false, foreign_key: true |
 | post            | references | null: false, foreign_key: true |
-| content         | text       | null: false                    |
+| content         | content    |                                |
 
 ### Association
 
