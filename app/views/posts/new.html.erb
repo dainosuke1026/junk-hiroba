@@ -1,3 +1,5 @@
+      <%= form_with model: @post, local: true do |f| %>
+
 <%= render "shared/header" %>
 
 <div class="main">
@@ -7,29 +9,27 @@
         チャット新規作成
       </div>
 
-      <%= form_with model: @post, local: true do |f| %>
-
-      <div class="post-inner">
-        <div class="post-input">
-          <h2>
-            ・チャットタイトル
-            <span>(40文字まで)</span>
-          </h2>
-          <%# <input class="post-title" placeholder="チャットタイトル(40文字まで)"> %>
-          <%= f.text_field :title, class:"post-title", placeholder:"チャットタイトル (必須 40文字まで)", maxlength:"40" %>
-          <h2>
-            ・タグ
-            <span>(スペース区切りで3つまで入力)</span>
-          </h2>
-          <%# <input class="post-tag" placeholder="タグをスペース区切りで3つまで入力"> %>
-            <%= f.text_area :post_tags, class:"post-tag", placeholder:"タグをスペース区切りで3つまで入力" %>
+        <div class="post-inner">
+          <div class="post-input">
+            <h2>
+              ・チャットタイトル
+              <span>(40文字まで)</span>
+            </h2>
+            <%= f.text_field :name, class:"post-title", placeholder:"チャットタイトル (必須 40文字まで)", maxlength:"40" %>
+            <h2>
+              ・タグ
+              <span>(スペース区切りで3つまで入力)</span>
+            </h2>
+            <input class="post-tag" placeholder="タグをスペース区切りで3つまで入力">
+              <%# <%= f.text_area :post_tags, class:"post-tag", placeholder:"タグをスペース区切りで3つまで入力" %>
+          </div>
         </div>
-      </div>
 
-      <div class="post-submit">
-        <%# <input class="btn action-btn" type="submit" value="チャットを作成する"> %>
+        <input name="post[user_ids][]" type="hidden" value=<%= current_user.id %>>
+
+        <div class="post-submit">
           <%= f.submit "チャットを作成する", class:"btn action-btn" %>
-      </div>
+        </div>
 
       <% end %>
 
