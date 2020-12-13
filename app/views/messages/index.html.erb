@@ -13,11 +13,11 @@
             <%# <%= link_to tags.tag_name %>
           </div>
           <div class="create-date">
-            2020年12月5日
+            <%= l @post.created_at %>
           </div>
         </div>
         <div class="title">
-          自作PC紹介
+          <%= @post.name %>
         </div>
       </div>
 
