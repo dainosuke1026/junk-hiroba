@@ -1,5 +1,3 @@
-      <%= form_with model: @post, local: true do |f| %>
-
 <%= render "shared/header" %>
 
 <div class="main">
@@ -8,6 +6,8 @@
       <div class="title">
         チャット新規作成
       </div>
+
+      <%= form_with model: @post, local: true do |f| %>
 
         <div class="post-inner">
           <div class="post-input">
