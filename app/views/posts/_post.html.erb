@@ -1,11 +1,11 @@
 <li class="list">
   <div class="list-header">
     <div class="create-date">
-      <%= post.created_at %>
+      <%= l post.created_at %>
     </div>
   </div>
   <div class="list-main">
-    <%= link_to post.name, post_path(post.id), class:"link", method: :get %>
+    <%= link_to post.name, post_messages_path(post), class:"link", method: :get %>
   </div>
   <div class="list-footer">
     タグ:

@@ -6,10 +6,11 @@
       </div>
       <div class="search">
         <form class="search-form" action="#">
-        <input class='input-box' placeholder='キーワードから探す'>
-        <button class="search-button">
-          <%= image_tag "search.png", class:"search-icon" %>
-        </button>
+          <input class='input-box' placeholder='キーワードから探す'>
+          <button class="search-button">
+            <%= image_tag "search.png", class:"search-icon" %>
+          </button>
+        </form>
       </div>
     </div>
 
@@ -37,7 +38,7 @@
       <% if user_signed_in? %>
         <li><%= link_to "チャット作成", new_post_path, class: "pulldown-menu" %></li>
         <li><%= link_to 'マイページ', user_path(current_user.id), class: "pulldown-menu" %></li>
-        <li><%= link_to 'ログアウト', "#", method: :delete, class: "pulldown-menu" %></li>
+        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "pulldown-menu" %></li>
       <% else %>
         <li><%= link_to "チャット作成", new_post_path, class: "pulldown-menu" %></li>
         <li><%= link_to 'ログイン', new_user_session_path, class: "pulldown-menu" %></li>

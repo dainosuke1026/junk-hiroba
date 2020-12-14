@@ -106,3 +106,7 @@
 .message-submit>.action-btn {
   margin-top: initial;
 }
+
+.field_with_errors {
+  display: contents;
+}
