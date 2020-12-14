@@ -1,40 +1,40 @@
 <div class="chat-section">
-      <div class="chat-header">
-        <div class="title-content">
-          <div class="title-tag">
-            タグ:
-            <%= link_to "DELL", "#", class:"tag" %>
-            <%= link_to "ノートPC", "#", class:"tag" %>
-            <%= link_to "1万円以内", "#", class:"tag" %>
-            <%# <%= link_to tags.tag_name %>
-          </div>
-          <div class="create-date">
-            <%= l @post.created_at %>
-          </div>
-        </div>
-        <div class="title">
-          <%= @post.name %>
-        </div>
+  <div class="chat-header">
+    <div class="title-content">
+      <div class="title-tag">
+        タグ:
+        <%= link_to "DELL", "#", class:"tag" %>
+        <%= link_to "ノートPC", "#", class:"tag" %>
+        <%= link_to "1万円以内", "#", class:"tag" %>
+        <%# <%= link_to tags.tag_name %>
       </div>
-
-      <div class="messages">
-        <%= render partial: 'message', collection: @messages %>
+      <div class="create-date">
+        <%= l @post.created_at %>
       </div>
-
-      <%= form_with model: [@post, @message], local: true do |f| %>
-        <div class="chat-footer">
-            <div class="form-input">
-              <%= f.text_area :content, class:"form-message", placeholder:"テキスト入力と画像を添付" %>
-              <label class="btn form-image">
-                <span class="image-file">画像</span>
-                <%= f.file_field :image, class:"hidden" %>
-              </label>
-            </div>
-
-            <div class="message-submit">
-              <%= f.submit "投稿する", class:"btn action-btn" %>
-            </div>
-        </div>
-      <% end %>
-
     </div>
+    <div class="title">
+      <%= @post.name %>
+    </div>
+  </div>
+
+  <div class="messages">
+    <%= render partial: 'message', collection: @messages %>
+  </div>
+
+  <%= form_with model: [@post, @message], local: true do |f| %>
+    <div class="chat-footer">
+        <div class="form-input">
+          <%= f.text_area :content, class:"form-message", placeholder:"テキスト入力と画像を添付" %>
+          <label class="btn form-image">
+            <span class="image-file">画像</span>
+            <%= f.file_field :image, class:"hidden" %>
+          </label>
+        </div>
+
+        <div class="message-submit">
+          <%= f.submit "投稿する", class:"btn action-btn" %>
+        </div>
+    </div>
+  <% end %>
+
+</div>
