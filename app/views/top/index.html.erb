@@ -2,31 +2,45 @@
 
 <div class="main">
   <div class="container">
+
     <div class="inner">
+      <div class="top-tab-section">
     
-      <div class="inner-box">
-        <div class="box-title">
-          新着一覧
-        </div>
-        <div class="box-content">
-          <ul class="list-items">
-            <%= render partial: "posts/post", collection: @posts %>
-          </ul>
-        </div>
-      </div>
+        <ul class="tab-menu">
+          <li><a href="#" class="active" data-id="new-arrival">新着記事</a></li>
+          <li><a href="#" data-id="ranking">ランキング</a></li>
+          <li><a href="#" data-id="question">質問</a></li>
+        </ul>
 
-      <div class="inner-box">
-        <div class="box-title">
-          ランキング
+        <div class="tab-content active" id="new-arrival">
+          <div class="box-content">
+            <ul class="list-items">
+              <%= render partial: "posts/post", collection: @posts %>
+            </ul>
+          </div>
         </div>
-        <div class="box-content">
-          <ul class="list-items">
-            <%= render partial: "posts/post", collection: @posts %>
-          </ul>
-        </div>
-      </div>
 
+        <div class="tab-content" id="ranking">
+          <div class="box-content">
+            <ul class="list-items">
+              ランキング
+              <%= render partial: "posts/post", collection: @posts %>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-content" id="question">
+          <div class="box-content">
+            <ul class="list-items">
+              質問
+              <%= render partial: "posts/post", collection: @posts %>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
+
   </div>
 </div>
 

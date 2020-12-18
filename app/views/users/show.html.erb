@@ -3,12 +3,12 @@
 <div class="main">
   <div class="container">
 
-    <div class="my-menu">
+    <div class="inner">
       <div class="tab-section">
         <ul class="tab-menu">
           <li><a href="#" class="active" data-id="my-chat">マイチャット</a></li>
           <li><a href="#" data-id="favorite">お気に入り</a></li>
-          <li><a href="#" data-id="comment-history">コメント履歴</a></li>
+          <li><a href="#" data-id="question-history">質問履歴</a></li>
         </ul>
 
         <div class="tab-content active" id="my-chat">
@@ -28,10 +28,10 @@
           </div>
         </div>
 
-        <div class="tab-content" id="comment-history">
+        <div class="tab-content" id="question-history">
           <div class="box-content">
             <ul class="list-items">
-              コメント履歴
+              質問履歴
               <%= render partial: "posts/post", collection: @posts %>
             </ul>
           </div>
