@@ -14,9 +14,7 @@
         <div class="tab-content active" id="my-chat">
           <div class="box-content">
             <ul class="list-items">
-              <% @posts.each do |post| %>
-                <%= render partial: "posts/post", locals: { post: post } %>
-              <% end %>
+              <%= render partial: "posts/post", collection: @posts %>
             </ul>
           </div>
         </div>
@@ -25,9 +23,7 @@
           <div class="box-content">
             <ul class="list-items">
               お気に入り
-              <% @posts.each do |post| %>
-                <%= render partial: "posts/post", locals: { post: post } %>
-              <% end %>
+              <%= render partial: "posts/post", collection: @posts %>
             </ul>
           </div>
         </div>
@@ -36,9 +32,7 @@
           <div class="box-content">
             <ul class="list-items">
               コメント履歴
-              <% @posts.each do |post| %>
-                <%= render partial: "posts/post", locals: { post: post } %>
-              <% end %>
+              <%= render partial: "posts/post", collection: @posts %>
             </ul>
           </div>
         </div>

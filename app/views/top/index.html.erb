@@ -10,9 +10,7 @@
         </div>
         <div class="box-content">
           <ul class="list-items">
-            <% @posts.each do |post| %>
-              <%= render partial: "posts/post", locals: { post: post } %>
-            <% end %>
+            <%= render partial: "posts/post", collection: @posts %>
           </ul>
         </div>
       </div>
@@ -23,10 +21,7 @@
         </div>
         <div class="box-content">
           <ul class="list-items">
-            <%# <% @posts.each do |post| %>
-              <%# <%= render partial: "posts/post" %> %>
-              <%# <%= render partial: "posts/post", locals: { post: post } %>
-            <%# <% end %>
+            <%= render partial: "posts/post", collection: @posts %>
           </ul>
         </div>
       </div>
