@@ -1,11 +1,12 @@
-.my-menu {
-  display: flex;
-  align-items: baseline;
-}
-
 .tab-section {
   width: 70%;
   align-items: baseline;
+  padding: 10px;
+  margin: 10px;
+  min-height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.15);
 }
 
 .tab-menu {
@@ -26,6 +27,7 @@
 
 .tab-menu li a.active {
   background-color: #fff;
+  border-bottom: 1px solid red;
 }
 
 .tab-menu li a:not(.active):hover {
@@ -52,4 +54,7 @@
   padding: 10px;
   margin: 10px;
   border-radius: 4px;
+  min-height: 150px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.15);
 }

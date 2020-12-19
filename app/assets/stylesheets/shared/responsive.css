@@ -55,19 +55,5 @@
 }
 
 @media (max-width: 780px) {
-  .title-logo {
-    font-size: 25px;
-  }
 
-  .input-box {
-    display: none;
-  }
-
-  .nav-item {
-    margin-left: 10px;
-  }
-
-  .bottom {
-    justify-content: space-between;
-  }
 }

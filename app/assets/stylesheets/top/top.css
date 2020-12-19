@@ -4,6 +4,7 @@ html {
 
 .main {
   width: 100vw;
+  min-width: 786px;
 }
 
 .container {
@@ -13,21 +14,7 @@ html {
 
 .inner {
   display: flex;
-  justify-content: space-evenly;
   align-items: baseline;
-}
-
-.inner-box {
-  background-color: #fff; 
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin: 10px;
-  width: 100%;
-  min-height: 150px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0 0 8px 0 rgba(0,0,0,0.15);
 }
 
 .box-title {
@@ -102,4 +89,15 @@ span > br {
 
 .action-btn:hover {
   background-color: darkorange;
+}
+
+.top-tab-section {
+  align-items: baseline;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  min-height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.15);
 }
