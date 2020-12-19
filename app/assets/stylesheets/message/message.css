@@ -2,6 +2,7 @@
   margin: 100px auto;
   max-width: 1600px;
   background-color: #fff;
+  min-width: 786px;
 }
 
 .chat-section {

@@ -4,6 +4,7 @@ html {
 
 .main {
   width: 100vw;
+  min-width: 786px;
 }
 
 .container {

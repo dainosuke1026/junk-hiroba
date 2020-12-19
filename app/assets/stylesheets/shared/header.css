@@ -10,12 +10,13 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #3ccace;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 65px;
   width: 100vw;
   position: fixed;
   top: 0;
   z-index: 10;
+  min-width: 786px;
 }
 
 .search {
