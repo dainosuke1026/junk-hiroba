@@ -77,6 +77,11 @@ header {
   padding: 8px;
 }
 
+.search-submit {
+  width: 100%;
+  display: none;
+}
+
 .search-icon {
   width: 100%;
 }
