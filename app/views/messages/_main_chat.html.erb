@@ -19,12 +19,15 @@
 
   <div class="messages">
     <%= render partial: 'message', collection: @messages %>
+    <div id="list">
+    </div>
   </div>
 
-  <%= form_with model: [@post, @message], local: true do |f| %>
+
+  <%= form_with model: [@post, @message], id:"form" do |f| %>
     <div class="chat-footer">
         <div class="form-input">
-          <%= f.text_area :content, class:"form-message", placeholder:"テキスト入力と画像を添付" %>
+          <%= f.text_area :content, class:"form-message", id:"content", placeholder:"テキスト入力と画像を添付" %>
           <label class="btn form-image">
             <span class="image-file">画像</span>
             <%= f.file_field :image, class:"hidden" %>
@@ -32,7 +35,7 @@
         </div>
 
         <div class="message-submit">
-          <%= f.submit "投稿する", class:"btn action-btn" %>
+          <%= f.submit "投稿する", class:"btn action-btn", id:"submit" %>
         </div>
     </div>
   <% end %>

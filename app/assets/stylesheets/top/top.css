@@ -31,7 +31,7 @@ html {
   padding: 10px;
 }
 
-.list-items>.list {
+.list-items>.room-list {
   border-bottom: 1px solid #3ccace;
   padding: 15px 10px;
 }
