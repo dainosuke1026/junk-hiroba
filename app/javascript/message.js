@@ -14,8 +14,8 @@ function message() {
         alert(`Error ${XHR.status}: ${XHR.statusText}`);
         return null;
       }
+
       const item = XHR.response.message;
-      // console.log(item);
       const list = document.getElementById("list");
       const formText = document.getElementById("content");
 
