@@ -30,10 +30,11 @@
 
 ## 洗い出した要件
 
+### ユーザー新規登録機能
 
 ## テーブル設計
 
-## users テーブル
+### users テーブル
 
 | Column          | Type   | Options     |
 | --------------- | ------ | ----------- |
@@ -48,7 +49,7 @@
 - has_many :messages
 - has_many :favorites
 
-## posts テーブル
+### posts テーブル
 
 | Column          | Type   | Options     |
 | --------------- | ------ | ----------- |
@@ -63,7 +64,7 @@
 - has_many :post_tags
 - has_many :tags, throuth: post_tags
 
-## post_users テーブル
+### post_users テーブル
 
 | Column          | Type       | Options                        |
 | --------------- | ---------- | ------------------------------ |
@@ -75,7 +76,7 @@
 - belongs_to :post
 - belongs_to :user
 
-## messages テーブル
+### messages テーブル
 
 | Column          | Type       | Options                        |
 | --------------- | ---------- | ------------------------------ |
@@ -88,7 +89,7 @@
 - belongs_to :post
 - belongs_to :user
 
-## tags テーブル
+### tags テーブル
 
 | Column   | Type   | Options     |
 | -------- | ------ | ----------- |
@@ -99,7 +100,7 @@
 - has_many :post_tags
 - has_many :posts, throuth: post_tags
 
-## post_tags テーブル
+### post_tags テーブル
 
 | Column          | Type       | Options                        |
 | --------------- | ---------- | ------------------------------ |
@@ -111,7 +112,7 @@
 - belongs_to :post
 - belongs_to :tag
 
-## favorites テーブル
+### favorites テーブル
 
 | Column          | Type       | Options                        |
 | --------------- | ---------- | ------------------------------ |
