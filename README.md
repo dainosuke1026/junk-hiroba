@@ -1,30 +1,37 @@
-# README
+# ジャンク広場
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション概要
 
-Things you may want to cover:
+自作PCの紹介や、分解作業、部品などの情報を共有できるサービス。
 
-* Ruby version
+## URL
 
-* System dependencies
+未完
 
-* Configuration
+## テスト用アカウント
 
-* Database creation
+* メールアドレス: abc@abc
 
-* Database initialization
+* パスワード: abc123
 
-* How to run the test suite
+## 利用方法
 
-* Services (job queues, cache servers, search engines, etc.)
+* 新規投稿ページでアカウントを作成してログインする。
 
-* Deployment instructions
+* ログインした状態で記事を投稿したり、チャットルームを作成する。
 
-* ...
+* ログインした状態で記事に対してコメントしたり、チャットルームにメッセージ投稿する。
+
+## 目指した課題解決
+
+* パソコンの分解や組み立て作業をしていて、方法や部品についてわからない部分があるので質問したい。
+
+* 自作PCや作業工程など、趣味を共有したい。
+
+## 洗い出した要件
 
 
-# テーブル設計
+## テーブル設計
 
 ## users テーブル
 
