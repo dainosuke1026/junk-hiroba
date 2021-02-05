@@ -224,3 +224,12 @@
 
 - belongs_to :user
 - belongs_to :post
+
+## ローカルでの動作方法
+- macOS
+- ruby '2.6.5'
+
+- gem 'rails', '~> 6.0.0'
+- gem 'devise'
+- gem 'mini_magick'
+- gem 'image_processing', '~> 1.2'
