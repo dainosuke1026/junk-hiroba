@@ -132,6 +132,9 @@
 
 ## テーブル設計
 
+### ER図
+![ER図](https://gyazo.com/7de48e2cb69f0ed7e516680a19f41b89)
+
 ### users テーブル
 
 | Column          | Type   | Options     |
