@@ -117,8 +117,11 @@
 * 条件に該当する記事やチャットルームを検索結果のページで表示する
 
 ## 実装した機能について
-![実装した機能について](https://i.gyazo.com/025870ed89c74cf2df5dff624dd35bb4.gif)
-![実装した機能について](https://i.gyazo.com/cb622d5b8d2bd8b826d656beda669751.gif)
+### ユーザー新規登録機能
+![ユーザー新規登録機能](https://i.gyazo.com/025870ed89c74cf2df5dff624dd35bb4.gif)
+
+### チャットルームメッセージ機能
+![チャットルームメッセージ機能](https://i.gyazo.com/cb622d5b8d2bd8b826d656beda669751.gif)
 
 ## テーブル設計
 
