@@ -118,6 +118,7 @@
 
 ## 実装した機能について
 ![実装した機能について](https://i.gyazo.com/025870ed89c74cf2df5dff624dd35bb4.gif)
+![実装した機能について](https://i.gyazo.com/cb622d5b8d2bd8b826d656beda669751.gif)
 
 ## テーブル設計
 
