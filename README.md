@@ -133,7 +133,7 @@
 ## テーブル設計
 
 ### ER図
-![ER図](https://i.gyazo.com/7de48e2cb69f0ed7e516680a19f41b89.png)
+![ER図](https://i.gyazo.com/e4bfb8b31afdd43c99843ab0047d4b37.png)
 
 ### users テーブル
 
