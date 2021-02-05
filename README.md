@@ -117,7 +117,7 @@
 * 条件に該当する記事やチャットルームを検索結果のページで表示する
 
 ## 実装した機能について
-https://github.com/dainosuke1026/junk-hiroba/issues/20#issue-801762423
+![実装した機能について](https://i.gyazo.com/025870ed89c74cf2df5dff624dd35bb4.gif)
 
 ## テーブル設計
 
