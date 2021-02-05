@@ -225,7 +225,7 @@
 - belongs_to :user
 - belongs_to :post
 
-## ローカルでの動作方法
+## ローカルでの動作環境
 - macOS
 - ruby '2.6.5'
 
